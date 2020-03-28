@@ -28,7 +28,7 @@ const NavItem = ({ className, href, children, logo }) => (
     <a className="white no-underline" href={href}>
       {logo ? (
         //check for logo property, if have render it out, otherwise just render nav text
-        <img src="../images/logo.svg" className="db center logo" />
+        <img src="images/logo.svg" className="db center logo" />
       ) : (
         children
       )}
@@ -104,7 +104,7 @@ class Attraction extends React.Component {
       >
         <div className="relative">
             <Overlay {...this.props}{...this.state}/>
-          <img src={`../images/${image}`} className="db" />
+          <img src={`images/${image}`} className="db" />
         </div>
       </div>
     );
